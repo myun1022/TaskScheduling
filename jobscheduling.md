@@ -1,3 +1,4 @@
+```java
 import java.util.Scanner;
 
 class job {       //작업의 시작시간 s와 끝시간 f를 저장
@@ -77,3 +78,4 @@ public class Jobscheduling {
         scanner.close();
     }
 }
+```
