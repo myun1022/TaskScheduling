@@ -9,7 +9,7 @@ public class TaskScheduling {
 
     public static void randomTask(int n, int t) {
 
-        Random r = new Random(n);
+        Random r = new Random();
 
         task = new int[n][n];
         m = new int[n];
