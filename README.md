@@ -11,7 +11,7 @@ Job Scheduling 문제는 작업의 수행 시간이 중복되지 않도록 모�
 -------
 
 1. 시작시간에 대해 작업을 오름차순으로 정렬한다.
-```
+```java
 static void mergeSort(job[] A, int p, int q) {      //합병정렬을 사용하여 작업의 시작시간 오름차순으로 정렬
         if (p >= q) return;
         int k = (p + q) / 2;
@@ -46,7 +46,7 @@ static void mergeSort(job[] A, int p, int q) {      //합병정렬을 사용하�
 -------
 
 2. 정렬된 작업들을 중복되지 않게 수행할 수 있는 기계를 찾아 배정한다.
-```
+```java
  mergeSort(L, 0, n - 1);      //시작시간의 오름차순으로 정렬된 배열 L
         job[][] machine = new job[n][n];      //수행시간이 중복되지 않게 작업을 배정할 2차원 배열 machine
 
@@ -71,7 +71,7 @@ static void mergeSort(job[] A, int p, int q) {      //합병정렬을 사용하�
 -------
 
 3. 각 기계에 배정된 작업들의 순서를 출력한다.
-```
+```java
  for (int i = 0; i < n; i++) {
             //기계 별로 배정된 작업을 순서대로 출력
             if (machine[i][0] == null) break;
